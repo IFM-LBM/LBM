@@ -1,5 +1,7 @@
 program main
 
+  use mpi
+  use parameters
   use variables
   
   implicit none
