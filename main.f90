@@ -1,6 +1,9 @@
 program main
 
-  implicit none
-  print*, "Start LBM"
+  use variables
   
+  implicit none
+  write(*,*) "Starting LBM"
+
+  write(*,*) "Finishing LBM"
 end program main
