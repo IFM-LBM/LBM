@@ -21,9 +21,11 @@ program main
 
   if (id==0) then
      write(*,*) "Starting LBM"
+     call allocate
   endif
 
   if (id==0) then
+     call deallocate
      write(*,*) "Finishing LBM"
   endif
   
