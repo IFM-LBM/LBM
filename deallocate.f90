@@ -7,6 +7,6 @@ subroutine deallocate
   
   deallocate(x,T,w)
   deallocate(f,f_new)
-  deallocate(feq,omega)
+  deallocate(feq)
   
 end subroutine deallocate
