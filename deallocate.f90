@@ -4,7 +4,9 @@ subroutine deallocate
   use variables
 
   implicit none
-
-  deallocate(x)
+  
+  deallocate(x,T,w)
+  deallocate(f,f_new)
+  deallocate(feq,omega)
   
 end subroutine deallocate
