@@ -9,6 +9,8 @@ program main
   integer :: error
   integer :: p
   integer :: id
+
+  PRINT*, 'HOLA'
   
   !Initialize MPI
   call MPI_Init(error)
