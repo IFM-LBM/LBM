@@ -19,8 +19,6 @@ program main
   !Get the individual process ID.
   call MPI_Comm_rank ( MPI_COMM_WORLD, id, error )
 
-  womega =1.0d0/(alfa +.5d0)
-
   if (id==0) then
      write(*,*) "Starting LBM"
      call allocate
