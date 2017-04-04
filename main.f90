@@ -7,14 +7,14 @@ program main
   implicit none
 
   integer :: error
-  integer :: p
+  integer :: np
   integer :: id
 
   !Initialize MPI
   call MPI_Init(error)
 
   !Get the number of processes.
-  call MPI_Comm_size ( MPI_COMM_WORLD, p, error )
+  call MPI_Comm_size ( MPI_COMM_WORLD, np, error )
 
   !Get the individual process ID.
   call MPI_Comm_rank ( MPI_COMM_WORLD, id, error )
@@ -24,6 +24,7 @@ program main
      call allocate
      call initialize
      call initial_data
+     call output1D
   endif
 
   if (id==0) then
