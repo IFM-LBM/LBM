@@ -22,6 +22,8 @@ program main
   if (id==0) then
      write(*,*) "Starting LBM"
      call allocate
+     call initialize
+     call initial_data
   endif
 
   if (id==0) then
